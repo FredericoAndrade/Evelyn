@@ -1,0 +1,328 @@
+/*-----------------------------------------------------------------------------------*
+/* = Metadata
+/*-----------------------------------------------------------------------------------*/
+
+ /* 
+Authors: Daniel Bogre Udell & Frederico Andrade
+Description: Website designed for American photojournalist Evelyn Hockstein 
+Color Scheme: White #fff, Gold #94774f, Grey #414141
+*/
+
+/*-----------------------------------------------------------------------------------*
+/* = Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+/*-----------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+body {
+	background: #fff;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+
+header, hgroup, footer, section, article, aside {
+	display: block;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = Body, Common Classes & Wrap
+/*-----------------------------------------------------------------------------------*/
+
+.clear { 
+	clear:both;
+	}
+
+body {
+	font-family:'Esteban',helvetica,sans-serif;
+	color:#414141;
+	}
+	
+body a:link, body a:visited {
+	color:#94774f;
+	text-decoration:none;
+	}
+
+body a:hover {
+	text-decoration:underline;
+	}
+
+body p {
+	margin:10px 0px;
+	line-height:18px;
+	}
+
+#header, #footer {
+	font-family:'Fjalla One',helvetica,sans-serif;
+	padding:30px 0px;
+	}
+
+#header-nav, #footer {
+	font-family:'Anaheim',helvetica,sans-serif;
+	}
+
+#header #logo {
+	padding:5px 0px;
+	}
+
+#header #logo a:hover {
+	text-decoration:none;
+	}
+
+#header a:link, #header a:visited, #footer a:link, #footer a:visited {
+	color:#414141;
+	text-decoration:none;
+	} 
+
+#header a:hover, #footer a:hover {
+	text-decoration:underline;
+	}
+	
+#header ul {
+	margin-top:15px;
+	}
+
+#header-nav li, #footer-nav li {
+	display:inline;
+	margin-right:5px;
+	}
+
+#header img {
+	vertical-align:top;
+	}
+	
+#collection-title {
+	padding-bottom:15px;
+	border-bottom:1px solid #d1d1d1;
+	}
+
+#navigation-arrows {
+	margin:15px 0px;
+	font-family:arial;
+	font-size:.5em;
+	}
+
+#navigation-arrows a:link, #navigation-arrows a:visited {
+	color:#414141;
+	}
+
+#navigation-arrows a:hover {
+	color:#111;
+	text-decoration:none;
+	}
+
+#collection-slideshow .slideshow-current, #navigation-arrows {
+	text-align:center;
+	}
+	
+.slideshow-current p {
+	margin:30px 0px 35px;
+	}
+
+#photo-essays {
+	background:#f1f1f1;
+	padding:30px 0px;
+	border-top:1px solid #d1d1d1;
+	margin-top:30px;
+	}
+
+#thumbnails {
+	display:block;
+	margin:0px auto;
+	}
+
+#thumbnails li {
+	display:inline-block;
+	margin:4px 1px;
+	font-size:.75em;
+	}
+
+#thumbnails li div:first-child {
+	height:175px;
+	width:277px;
+	overflow:hidden;
+	}
+
+#thumbnails li img {
+	display:block;
+	margin:0px auto;
+	vertical-align:middle;
+	}
+	
+#thumbnails li div:last-child {
+	padding:5px 0px;
+	border-bottom:1px solid #d1d1d1;
+	}
+
+#thumbnails li a:link, #thumbnails a:visited {
+	color:#414141;
+	}
+
+#thumbnails li a:hover {
+	text-decoration:none;
+	}
+
+#about {
+	padding:30px 0px;
+	background:#414141;
+	color:#fff;
+	}
+
+#about a:link, #about a:visited {
+	color:#fff;
+	}
+
+#about p:first-child {
+	margin-top:0px;
+	}
+	
+#about img {
+	float:left; 
+	width:30%;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	-ie-border-radius:5px;
+	}
+
+#about #bio {
+	float:left; 
+	width:68%; 
+	margin-left:20px; 
+	text-align:justify;
+	}
+
+#about-title {
+	margin-bottom:20px;
+	font-family:'Fjalla One',helvetica,sans-serif;
+	}
+	
+#footer {
+	text-align:center;
+	}
+	
+#footer img {
+	vertical-align:bottom;
+	}
+
+/*-----------------------------------------------------------------------------------*
+/* = Font Sizes
+/*-----------------------------------------------------------------------------------*/
+
+body { 
+	font-size:21px; 
+	}
+
+body p {
+	font-size:.7em;
+	}
+
+.header-text {
+	font-size:1.75em;
+	}
+
+#header-nav {
+	font-size:.9em;
+	}
+
+.sub-header {
+	font-size:1em;
+	}
+
+#footer {
+	font-size:.75em;
+	}
+
+
+
+
+/*-----------------------------------------------------------------------------------*
+/* = Responsive CSS
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:767px) {
+
+#carousel {
+	margin-bottom:10px;
+	}
+
+#about #bio {
+	width:67%;
+	}
+
+#container li div:first-child {
+	width:346px;
+	height:220px;
+	}
+
+}
+
+@media only screen and (max-width:480px) {
+
+#header {
+	text-align:center;
+	}
+
+#container li div:first-child {
+	width:100%;
+	}
+
+#thumbnails li div {
+	width:100%;
+	height:200px;
+	}
+
+
+#about img, #about #bio {
+	width:100%;
+	}
+
+#about #bio {
+	margin:20px 0px
+	}
+
+#footer-wrapper p:first-child {
+	margin-top:10px;
+	}
+
+}
