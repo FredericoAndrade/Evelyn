@@ -36,7 +36,7 @@
             left:0;
             width:100%;
             height:100%;
-            background:rgba(255,255,255,.95);
+            background:rgba(0,0,0,.9);
             text-align:center;
         }
         #lightbox p {
@@ -46,14 +46,24 @@
             font-size:12px;
         }
         #lightbox a:link, #lightbox a:visited {
-            color:#222;
+            color:#fff;
             font-family:arial;
         }
         #lightbox a:hover {
             text-decoration:none;
         }
         #lightbox .nav {
-            margin-bottom:10px;
+            margin:15px 0px;
+        }
+        #lightbox .nav a {
+            -webkit-transition: text-shadow 0.5s ease-in-out;
+            -mz-transition: text-shadow 0.5s ease-in-out;
+            -o-transition: text-shadow 0.5s ease-in-out;
+            -ms-transition: text-shadow 0.5s ease-in-out;
+            transition: text-shadow 0.5s ease-in-out;
+        }
+        #lightbox .nav a:hover {
+            text-shadow:-1px 0px 0px #fff;
         }
         #lightbox img {
             max-height:90%;
@@ -231,11 +241,10 @@ $(document).ready(function(){
       // create HTML markup for lightbox window
       var lightbox =
           '<div id="lightbox">' +
-          '<p>Click to close</p>' +
           '<div id="slideshow">' +
           '<div class="nav">' +
           '<a href="#prev" class="prev slide-nav">&leftarrow;</a>' +
-          '<span>&nbsp;</span>' +
+          '<span>&nbsp;&nbsp;&nbsp;</span>' +
           '<a href="#next" class="next slide-nav">&rightarrow;</a>' +
           '</div>' +
           '<ul></ul>' +        
